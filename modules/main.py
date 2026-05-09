@@ -403,18 +403,30 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**📹 VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {res}.mkv\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n╔══❖•ೋ° °ೋ•❖══╗\n"
-"║      ✦ Extracted By ✦      ║\n"
-"╚══❖•ೋ° °ೋ•❖══╝\n\n"
-"┏━━━°❀•°━━━┓\n"
-"┃   ● ➠: {CR}   ┃\n"
-"┗━━━°❀•°━━━┛"\n\n**∘₊❀╬━═══𓆩MK𓆪═══━╬❀₊∘**'
-                cc1 = f'**💾 PDF_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} .pdf\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n╔══❖•ೋ° °ೋ•❖══╗\n"
-"║      ✦ Extracted By ✦      ║\n"
-"╚══❖•ೋ° °ೋ•❖══╝\n\n"
-"┏━━━°❀•°━━━┓\n"
-"┃   ● ➠: {CR}   ┃\n"
-"┗━━━°❀•°━━━┛"**∘₊❀╬━═══𓆩MK𓆪═══━╬❀₊∘**'
+                cc = (
+                    f'**📹 VID_ID: {str(count).zfill(3)}.\n\n'
+                    f'📝 Title: {name1} {res}.mkv\n\n'
+                    f'<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n'
+                    f'╔══❖•ೋ° °ೋ•❖══╗\n'
+                    f'✦  Extracted By  ✦\n'
+                    f'╚══❖•ೋ° °ೋ•❖══╝\n\n'
+                    f'┏━━━°❀•°━━━┓\n'
+                    f'┃ ● ➠:{CR}   \n'
+                    f'┗━━━°❀•°━━━┛\n\n'
+                    f'∘꧁❀𓆩𝗠𝗞 𝗞𝗵𝗮𝗻𓆪🦅❀꧂∘'
+                )
+                cc1 = (
+                    f'**💾 PDF_ID: {str(count).zfill(3)}.\n\n'
+                    f'📝 Title: {name1} .pdf\n\n'
+                    f'<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n'
+                    f'╔══❖•ೋ° °ೋ•❖══╗\n'
+                    f'✦  Extracted By  ✦\n'
+                    f'╚══❖•ೋ° °ೋ•❖══╝\n\n'
+                    f'┏━━━°❀•°━━━┓\n'
+                    f'┃ ● ➠:{CR}.  \n'
+                    f'┗━━━°❀•°━━━┛\n\n'
+                    f'∘꧁❀𓆩𝗠𝗞 𝗞𝗵𝗮𝗻𓆪🦅❀꧂∘'
+                )
                     
                 
                 if "drive" in url:
