@@ -49,15 +49,15 @@ class db:
 # ─────────────────────────────────────────────────────────────────────────────
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="🔎Developer", url="https://t.me/SmartBoy_ApnaMS")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="🔎Developer", url="https://t.me/Mk_khan001")]])
 keyboard = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(text="🛠️ Channel", url="https://t.me/Toxic_Official_1"),
-            InlineKeyboardButton(text="👑 Owner", url="https://t.me/MR_Toxic_1"),
+            InlineKeyboardButton(text="👑 Owner", url="https://t.me/SmartBoy_ApnaMS"),
         ],
         [
-            InlineKeyboardButton(text="🔎 Developer", url="https://t.me/SmartBoy_ApnaMS"),
+            InlineKeyboardButton(text="🔎 Developer", url="https://t.me/Mk_khan001"),
         ],
     ]
 )
@@ -250,7 +250,7 @@ async def broadcast_handler(client: Client, msg: Message):
 
 
 # ── /Mkhan command ──────────────────────────────────────────────────────────────
-@bot.on_message(filters.command(["Mk"]))
+@bot.on_message(filters.command(["Darling"]))
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"**🔹Hi I am Poweful Lovely TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and Just wait and Watch😚.**")
     input: Message = await bot.listen(editable.chat.id)
@@ -403,8 +403,14 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**📹 VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {res}.mkv\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By♠ : {CR}\n\n**∘₊❀━━━𓆩MK𓆪━━━❀₊∘**'
-                cc1 = f'**💾 PDF_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} .pdf\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By♠ : {CR}\n\n**∘₊❀━━━𓆩MK𓆪━━━❀₊∘**'
+                cc = f'**📹 VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {res}.mkv\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 ✦ Extracted By ✦
+╭────────────╮
+   ●  {CR}
+╰────────────╯: {CR}\n\n**∘₊❀╬━═══𓆩MK𓆪═══━╬❀₊∘**'
+                cc1 = f'**💾 PDF_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} .pdf\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 ✦ Extracted By ✦
+╭────────────╮
+   ●  {CR}
+╰────────────╯: {CR}\n\n**∘₊❀╬━═══𓆩MK𓆪═══━╬❀₊∘**'
                     
                 
                 if "drive" in url:
@@ -460,7 +466,7 @@ async def txt_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("𝐀𝐋𝐋 𝐃𝐎𝐍𝐄 Reaction khud de doge ya kahna padega ✅🔸")
+    await m.reply_text("𝐀𝐋𝐋 𝐃𝐎𝐍𝐄 ✅ अब Ɍ𝝚𝝖𝗖𝝩𝝞𝝤𝝢 की बमबारी कर दो  🙄🤧🔸")
 
 
 # ── /Ali command ───────────────────────────────────────────────────────────────
