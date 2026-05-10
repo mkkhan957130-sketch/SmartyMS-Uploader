@@ -401,7 +401,7 @@ async def txt_handler(bot: Client, m: Message):
             else:
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
-            try:  
+           try:  
                 
                 cc = (
                     f'**📹 VID_ID: {str(count).zfill(3)}.\n\n'
@@ -412,8 +412,8 @@ async def txt_handler(bot: Client, m: Message):
                     f'╚══❖•ೋ° °ೋ•❖══╝\n\n'
                     f'┏━━━°❀•°━━━┓\n'
                     f'┃ ● ➠:{CR}   \n'
-                    f'┗━━━°❀•°━━━┛\n\n'
-                    f'∘꧁❀𓆩𝗠𝗞 𝗞𝗵𝗮𝗻𓆪🦅❀꧂∘'
+                         f'┗━━━°❀•°━━━┛\n\n'
+                     f'∘₊❀╬━═══𓆩MK𓆪═══━╬❀₊∘'
                 )
                 cc1 = (
                     f'**💾 PDF_ID: {str(count).zfill(3)}.\n\n'
@@ -424,12 +424,12 @@ async def txt_handler(bot: Client, m: Message):
                     f'╚══❖•ೋ° °ೋ•❖══╝\n\n'
                     f'┏━━━°❀•°━━━┓\n'
                     f'┃ ● ➠:{CR}.  \n'
-                    f'┗━━━°❀•°━━━┛\n\n'
-                    f'∘꧁❀𓆩𝗠𝗞 𝗞𝗵𝗮𝗻𓆪🦅❀꧂∘'
+                         f'┗━━━°❀•°━━━┛\n\n'
+                     f'∘₊❀╬━═══𓆩MK𓆪═══━╬❀₊∘'
                 )
                     
                 
-                if "drive" in url:
+                if "drive" in url: 
                     try:
                         ka = await helper.download(url, name)
                         copy = await bot.send_document(chat_id=m.chat.id,document=ka, caption=cc1)
