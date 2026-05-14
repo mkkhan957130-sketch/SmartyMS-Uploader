@@ -72,13 +72,13 @@ PWAPI2 = "https://anonymouspwplayerr-3cfbfedeb317.herokuapp.com/pw"
 
 # ── Random image list (add/remove URLs freely) ────────────────────────────────
 image_list = [
-    "https://graph.org/file/9427b9e9e643d29bcaf33-aa5c8b67c163a9c4a2.jpg",
-    "https://graph.org/file/77656b3519aae1826dd7a-16b8aafc835d99d6f1.jpg",
-    "https://graph.org/file/5e0485a8e5db299de606b-3156b543bd2a963740.jpg",
-    "https://graph.org/file/17bb023117043bb942185-96bf90a807fef3e18d.jpg",
-    "https://graph.org/file/065fa6a3871e2de715e3a-f774a3a3bad574c214.jpg",
-    "https://graph.org/file/7da497bca809e08f89898-bf746d8ce14d321a4f.jpg",
-    "https://graph.org/file/c2f371599c84453293f1a-f1fb1a7bdb872a6e1a.jpg",
+    "https://graph.org/file/21f81d5d26d526a2b8cd7-418e84f8a4a7dc3b24.jpg",
+    "https://graph.org/file/44d9a983782189e2addbc-38b5313bcb60d8f86c.jpg",
+    "https://graph.org/file/db51989683222864f9061-91309e31f54637fad5.jpg",
+    "https://graph.org/file/8b7a60579adbfe2c3e8c9-95b29ee52e8dab1818.jpg",
+    "https://graph.org/file/c7cfce9d2099377f7e523-03e5ba5c6d7726a2c2.jpg",
+    "https://graph.org/file/103cc615925782546f6d9-137af3deba4e6f6a8b.jpg",
+    "https://graph.org/file/ebdc7f045d0bfb130d3b2-f92c8fe104d6d74a48.jpg",
 ]
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -405,10 +405,10 @@ async def txt_handler(bot: Client, m: Message):
                 
                 cc = (
                     f'**📹 VID_ID: {str(count).zfill(3)}.\n\n'
-                    f'📝 Title: {name1} {res}.mkv\n\n'
-                    f'<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n'
+                    f'<b>📝 Title:</b> {name} {res}.mkv\n\n'
+                    f'<b>📚 Batch Name:</b> <code>{b_name}</code>\n\n'
                     f'╔══❖•ೋ° °ೋ•❖══╗\n'
-                    f'✦  Extracted By  ✦\n'
+                    f'<b>✦  Extracted By  ✦</b>\n'
                     f'╚══❖•ೋ° °ೋ•❖══╝\n\n'
                     f'┏━━━°❀•°━━━┓\n'
                     f'┃ ● ➠:{CR}   \n'
@@ -417,10 +417,10 @@ async def txt_handler(bot: Client, m: Message):
                 )
                 cc1 = (
                     f'**💾 PDF_ID: {str(count).zfill(3)}.\n\n'
-                    f'📝 Title: {name1} .pdf\n\n'
-                    f'<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n'
+                    f'<b>📝 Title:</b> {name} {res}.mkv\n\n'
+                    f'<b>📚 Batch Name:</b> <code>{b_name}</code>\n\n'
                     f'╔══❖•ೋ° °ೋ•❖══╗\n'
-                    f'✦  Extracted By  ✦\n'
+                    f'<b>✦  Extracted By  ✦</b>\n'
                     f'╚══❖•ೋ° °ೋ•❖══╝\n\n'
                     f'┏━━━°❀•°━━━┓\n'
                     f'┃ ● ➠:{CR}.  \n'
