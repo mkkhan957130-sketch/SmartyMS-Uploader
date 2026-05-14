@@ -405,8 +405,8 @@ async def txt_handler(bot: Client, m: Message):
                 
                 cc = (
                     f'**📹 VID_ID: {str(count).zfill(3)}.\n\n'
-                    f'<b>📝 Title:</b> {name} {res}.mkv\n\n'
-                    f'<b>📚 Batch Name:</b> <code>{b_name}</code>\n\n'
+                    f'📝 Title: {name} {res}.mkv\n\n'
+                    f'<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n'
                     f'╔══❖•ೋ° °ೋ•❖══╗\n'
                     f'<b>✦  Extracted By  ✦</b>\n'
                     f'╚══❖•ೋ° °ೋ•❖══╝\n\n'
@@ -417,8 +417,8 @@ async def txt_handler(bot: Client, m: Message):
                 )
                 cc1 = (
                     f'**💾 PDF_ID: {str(count).zfill(3)}.\n\n'
-                    f'<b>📝 Title:</b> {name} {res}.mkv\n\n'
-                    f'<b>📚 Batch Name:</b> <code>{b_name}</code>\n\n'
+                    f'📝 Title: {name} {res}.mkv\n\n'
+                    f'<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n'
                     f'╔══❖•ೋ° °ೋ•❖══╗\n'
                     f'<b>✦  Extracted By  ✦</b>\n'
                     f'╚══❖•ೋ° °ೋ•❖══╝\n\n'
@@ -432,7 +432,12 @@ async def txt_handler(bot: Client, m: Message):
                 if "drive" in url: 
                     try:
                         ka = await helper.download(url, name)
-                        copy = await bot.send_document(chat_id=m.chat.id,document=ka, caption=cc1)
+                        copy = await bot.send_document(
+                        chat_id=m.chat.id,
+                        document=ka,
+                        caption=cc1,
+                        parse_mode="html"
+                        )
                         count+=1
                         os.remove(ka)
                         time.sleep(1)
