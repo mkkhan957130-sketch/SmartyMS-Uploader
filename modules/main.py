@@ -405,7 +405,7 @@ async def txt_handler(bot: Client, m: Message):
                 
                 cc = (
                     f'**📹 VID_ID: {str(count).zfill(3)}.\n\n'
-                    f'📝 Title: {name} {res}.mkv\n\n'
+                    f'📝 <b> 𝑻𝒊𝒕𝒍𝒆 : {name}</b>  {res}.mkv\n\n'
                     f'<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n'
                     f'╔══❖•ೋ° °ೋ•❖══╗\n'
                     f'<b>✦  Extracted By  ✦</b>\n'
@@ -417,7 +417,7 @@ async def txt_handler(bot: Client, m: Message):
                 )
                 cc1 = (
                     f'**💾 PDF_ID: {str(count).zfill(3)}.\n\n'
-                    f'📝 Title: {name} {res}.mkv\n\n'
+                    f'📝 <b> 𝑻𝒊𝒕𝒍𝒆 : {name}</b>  {res}.mkv\n\n'
                     f'<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n'
                     f'╔══❖•ೋ° °ೋ•❖══╗\n'
                     f'<b>✦  Extracted By  ✦</b>\n'
