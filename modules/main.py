@@ -54,7 +54,7 @@ keyboard = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(text="🛠️ Channel", url="https://t.me/Toxic_Official_1"),
-            InlineKeyboardButton(text="👑 Owner", url="https://t.me/SmartBoy_ApnaMS"),
+            InlineKeyboardButton(text="👑 Owner", url="https://t.me/Mk_khan001"),
         ],
         [
             InlineKeyboardButton(text="🔎 Developer", url="https://t.me/Mk_khan001"),
@@ -66,8 +66,8 @@ my_name = "MK"
 
 # ── Live-changeable API endpoints (owner can update via /changeapi) ──────────
 # Both PWAPI1 and PWAPI2 always stay in sync — use /changeapi to update both
-PWAPI1 = "https://anonymouspwplayerr-3cfbfedeb317.herokuapp.com/pw"
-PWAPI2 = "https://anonymouspwplayerr-3cfbfedeb317.herokuapp.com/pw"
+PWAPI1 = "https://anonymouspwplayeer-2038df9c1dbd.herokuapp.com/pw"
+PWAPI2 = "https://anonymouspwplayeer-2038df9c1dbd.herokuapp.com/pw"
 # ─────────────────────────────────────────────────────────────────────────────
 
 # ── Random image list (add/remove URLs freely) ────────────────────────────────
